@@ -41,10 +41,10 @@ export const checkKey = functions.https.onRequest(async (req, res) => {
       origin,
       destination,
     };
-    
+
     const { data } = await client.directions({ params });
     const duration = _get(data, 'routes[0].legs[0].duration.text');
-    
+
     if (!duration) {
       functions.logger.log("Unable to calculate duration");
       res.sendStatus(404);

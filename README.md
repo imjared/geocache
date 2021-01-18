@@ -11,7 +11,7 @@ Provides an endpoint to calculate distance between two points, cache the results
 5. After enabling the Directions API, [copy your API key](https://console.cloud.google.com/google/maps-apis/credentials)
 <img src="https://user-images.githubusercontent.com/525011/104941009-85c68d00-5980-11eb-96ca-57df445807e1.png" />
 
-6. From the command line, set this as a remote config value for your Firebase functions: `firebase functions:config:set google_api.maps_key="AIzaSyD-8h0WO59AibGLvldPSzcfgif65M8EsJk"`
+6. From the command line, set this as a remote config value for your Firebase functions: `firebase functions:config:set google_api.maps_key="YOUR_API_KEY"`
 7. Deploy functions from the `functions` directory via `npm run deploy`. Make note of the deployed function endpoint: https://console.firebase.google.com/project/[YOUR_PROJECT_ID]/functions/list
 
 ### Google Sheets

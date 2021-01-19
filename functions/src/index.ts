@@ -42,6 +42,7 @@ export const checkKey = functions.https.onRequest(async (req, res) => {
       destination,
     };
 
+    functions.logger.log('Fetching directions');
     const { data } = await client.directions({ params });
     const duration = _get(data, 'routes[0].legs[0].duration.text');
 
